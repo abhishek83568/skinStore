@@ -3,7 +3,7 @@ import { useNavigate } from "react-router-dom";
 
 const Cart = () => {
   const [data, setData] = useState([]);
-  const navigate=useNavigate();
+
   const fetchData = async () => {
     const response = await fetch("https://skinstore-backend.onrender.com/Cart");
     const data = await response.json();
@@ -19,7 +19,7 @@ const Cart = () => {
       method: "DELETE",
     });
     setData(data.filter((item) => item.id !== id));
-    navigate("/")
+  
   };
 
   const handleQuantityChange = async (id, newQuantity) => {
