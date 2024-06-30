@@ -37,7 +37,7 @@ const SearchProducts = () => {
       <div className="grid-container">
         {filteredProducts.map((product) => (
           <div key={product.id} className="product-item">
-            <img src={`.${product.image_path}`} alt={product.title} />
+            <img src={product.image_path} alt={product.title} />
             <h2>{product.title}</h2>
             <p>{product.price}</p>
           </div>
