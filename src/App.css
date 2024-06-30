@@ -1,0 +1,882 @@
+
+/* Slideshow 1 */
+.container{
+position: relative;
+display: flex;
+justify-content: center;
+align-items: center;
+width: 100%;
+height: 450px;
+margin-top: 40px;
+margin-bottom: 20px;
+cursor: pointer;
+
+}
+
+.current-image{
+    border-radius: 0.5rem;
+    box-shadow: 0px 0px 7px #666;
+    width: 100%;
+    height: 100%;
+}
+
+.arrow{
+    position: absolute;
+    width: 2rem;
+    height: 2rem;
+    color: white;
+    filter: drop-shadow(0px 0px 5px #555);
+
+}
+
+.arrow-left{
+    left: 1rem;
+}
+
+.arrow-right{
+    right: 1rem;
+}
+
+.circle-indicator{
+    display: flex;
+    position: absolute;
+    bottom: 1rem;
+}
+
+.current-indicator{
+    background-color: white;
+    height: 15px;
+    width: 15px;
+    border-radius: 50%;
+    border: none;
+    outline: none;
+    margin: 0 0.2rem;
+    cursor: pointer;
+}
+
+.hide-current-image{
+    display: none;
+}
+
+.inactive-indicator{
+    background-color:grey
+}
+
+
+
+
+/* TopBrands */
+
+
+/* General Container for the Slider */
+.top-brands-slider {
+    width: 100%; /* Full width to ensure responsiveness */
+    margin: 0 auto; /* Center horizontally */
+    padding: 20px 0; /* Optional: spacing around the slider */
+  }
+  
+  /* Slide Wrapper */
+  .slide {
+    display: flex !important;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  /* Slide Content */
+  .slide-content {
+    text-align: center;
+  }
+  
+  /* Circular Image Styling */
+  .circular-image {
+    width: 80%; /* Default size for larger screens */
+    height: 80%;
+    border-radius: 50%; /* Makes the image circular */
+    object-fit: cover; /* Ensures the image covers the element without distortion */
+     /* Optional: add a shadow */
+    margin: 0 auto; /* Center the image within its container */
+    transition: all 0.3s ease; /* Smooth resizing transition */
+  }
+  
+ 
+  
+  /* Optional: Styling for Dots Navigation */
+  .slick-dots li button:before {
+    color: #888; /* Color for inactive dots */
+  }
+  
+  .slick-dots li.slick-active button:before {
+    color: #333; /* Color for active dot */
+  }
+  
+  /* Optional: Styling for Arrows */
+  .slick-prev:before,
+  .slick-next:before {
+    color: #333; /* Color for arrows */
+    font-size: 1.5rem; /* Adjust arrow size */
+  }
+  
+  /* Responsive Adjustments */
+  @media (max-width: 900px) {
+    .circular-image {
+      width: 60%; /* Smaller size for tablet screens */
+      height: 60%;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .circular-image {
+      width: 40%; /* Smaller size for mobile screens */
+      height: 40%;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .circular-image {
+      width: 25%; /* Even smaller size for very small screens */
+      height: 25%;
+    }
+  
+  }
+
+
+
+
+  /*Offers component  */
+
+ 
+
+
+
+.offers-container {
+  padding: 20px;
+  background-color: #f8f9fa;
+  border-radius: 10px;
+  height: 700px;
+
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.offers-container > div:first-child {
+  margin-bottom: 20px;
+  margin-bottom: 20px;
+}
+
+.firstDiscount,
+.SecondDiscount {
+  padding: 10px 20px;
+  margin: 0 10px;
+border: 2px;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.3s;
+}
+
+.firstDiscount {
+ background-color: beige;
+  color: black;
+}
+
+.SecondDiscount {
+  background-color: beige;
+  color: black;
+}
+
+.firstDiscount:hover,
+.SecondDiscount:hover {
+  background-color: beige;
+  border-bottom: 5px solid black;
+  transform: scale(1.05);
+}
+
+.slider-container {
+  margin-top: 20px;
+  height: 250px;
+}
+
+.slide {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 10px;
+  height: 400px;
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s, box-shadow 0.3s;
+  margin: 10px;
+}
+
+.slide:hover {
+  transform: scale(1.05);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+.slide img {
+  width: 60%;
+  height: 40%;
+  padding: 20px;
+  border-radius: 10px;
+  margin-bottom: 10px;
+}
+
+.slide button{
+  background-color: #555;
+  color: white;
+  padding: 20px;
+ 
+  width: 80%;
+}
+
+.title{
+  font-size: larger;
+  font-weight: bolder;
+
+}
+
+.slide p {
+  margin: 10px 0;
+  font-size: 14px;
+  color: #333;
+}
+
+
+.slick-next:before {
+  color: white;
+  align-content: center;
+  font-size: 10px;
+  box-shadow:0 4px 8px rgba(0, 0, 0, 0.1) ;
+  background-color: #1c1a1a;
+}
+
+.slick-prev:before{
+  color:black;
+  background-color: black;
+ 
+}
+
+
+
+/* Best Seller component */
+
+/* BestSellers Component Styles */
+
+/* Container for the best sellers */
+.bestSeller-container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px; /* Increased gap for better spacing */
+  padding: 20px;
+  background-color: #f9f9f9;
+  border-radius: 10px;
+}
+
+/* Individual product content */
+.slide-content {
+  border: 1px solid #ddd; /* Soft border */
+  padding: 20px;
+  background-color: white;
+  border-radius: 10px;
+  text-align: center; /* Center content inside the card */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+/* Hover effect for product cards */
+.slide-content:hover {
+  transform: scale(1.05);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+/* Image styling within the product card */
+.slide-content img {
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+  border-radius: 10px;
+  margin-bottom: 10px;
+}
+
+/* Text styling */
+.slide-content p.title {
+  font-size: 16px;
+  font-weight: bold;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+/* Styling for other text (e.g., price) */
+.slide-content p {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  color: #555;
+}
+
+/* Button styling */
+.slide-content button {
+  background-color: #555;
+  color: white;
+  padding: 10px 20px;
+  margin-top: 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.3s;
+}
+
+.slide-content button:hover {
+  background-color: #333;
+  transform: scale(1.05);
+}
+
+/* View All Products button */
+.viewallProducts {
+  background-color: #555;
+  color: white;
+  padding: 10px 20px;
+  margin-top: 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.3s;
+  grid-column: span 4; /* Span all columns */
+  text-align: center;
+  justify-self: center;
+}
+
+.viewallProducts:hover {
+  background-color: #333;
+  transform: scale(1.05);
+}
+
+/* Responsive design adjustments */
+
+/* For tablet devices and above */
+@media (max-width: 900px) {
+  .bestSeller-container {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+/* For mobile devices and above */
+@media (max-width: 600px) {
+  .bestSeller-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* For small mobile devices */
+@media (max-width: 400px) {
+  .bestSeller-container {
+    grid-template-columns: 1fr;
+  }
+
+  .slide-content {
+    padding: 10px; /* Reduce padding for smaller screens */
+  }
+}
+
+
+
+
+/* Footer components */
+
+/* General padding class */
+.section__padding {
+  padding: 4rem;
+}
+
+/* Footer container */
+.footer {
+  background-color: #2d2d32;
+  color: white;
+  padding-top: 2rem;
+}
+
+/* Footer wrapper */
+.sb__footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Links section */
+.sb__footer-links {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  width: 100%;
+  margin-bottom: 2rem;
+}
+
+/* Individual links section */
+.sb__footer-links-div {
+  margin: 1rem;
+  min-width: 150px;
+}
+
+/* Anchor tags */
+a {
+  color: #afafb3;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #ffffff;
+}
+
+/* Social media icons */
+.socialmedia p {
+  display: inline-block;
+  font-size: 2rem;
+  margin: 0 10px;
+  gap: 10px;
+}
+
+.socialmedia p:hover {
+  color: #1a73e8; /* Change color on hover for visual feedback */
+}
+
+/* Footer links titles */
+.sb__footer-links-div h4 {
+  font-size: 16px;
+  margin-bottom: 1rem;
+  color: #ffffff;
+}
+
+/* Footer link paragraphs */
+.sb__footer-links-div p {
+  font-size: 14px;
+  margin: 0.5rem 0;
+  cursor: pointer;
+}
+
+/* Bottom section of the footer */
+.sb__footer-below {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  border-top: 1px solid #444;
+  padding-top: 1rem;
+}
+
+.sb__footer-below-links {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.sb__footer-below-links p {
+  margin: 0.5rem;
+  font-size: 13px;
+  color: white;
+  font-weight: 600;
+}
+
+.sb__footer-below-links a {
+  margin: 0 1rem;
+}
+
+.sb__footer-copyright p {
+  font-size: 13px;
+  margin: 0;
+  color: white;
+  font-weight: 600;
+}
+
+/* Divider line */
+hr {
+  width: 100%;
+  border: 0;
+  border-top: 1px solid #444;
+  margin: 2rem 0;
+}
+
+/* Responsive adjustments */
+
+/* For tablets and smaller screens */
+@media (max-width: 768px) {
+  .sb__footer-links {
+    justify-content: center;
+  }
+
+  .sb__footer-links-div {
+    margin: 1rem;
+  }
+
+  .sb__footer-below {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .sb__footer-below-links {
+    margin-top: 1rem;
+    justify-content: center;
+  }
+
+  .sb__footer-below-links a {
+    margin: 0.5rem;
+  }
+}
+
+/* For small mobile devices */
+@media (max-width: 480px) {
+  .section__padding {
+    padding: 2rem;
+  }
+
+  .sb__footer-links-div {
+    margin: 0.5rem;
+  }
+
+  .sb__footer-below-links p {
+    margin: 0.5rem 0;
+  }
+
+  .socialmedia p {
+    font-size: 1.5rem;
+    margin: 0 5px;
+  }
+}
+
+
+
+/* All Product page */
+
+.product-container{
+  
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  gap: 10px;
+  margin-bottom: 50px;
+  margin: 20px;
+}
+
+.single-product{
+
+box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+
+}
+
+.single-product div img{
+height: 250px;
+width: 100%;
+}
+
+.single-product h2{
+  text-align: center;
+  font-weight: bolder;
+
+}
+
+.single-product p{
+  text-align: center;
+  
+  
+}
+
+.cartButton{
+  
+  display: flex;
+ padding: 5px;
+ cursor: pointer;
+ background-color: #56690c;
+ color: white;
+  margin: auto;
+  margin-bottom: 5px;
+
+  
+}
+
+.viewProductButton{
+  
+  display: flex;
+ padding: 5px;
+ cursor: pointer;
+ background-color: #1c1a1a;
+ color: white;
+  margin: auto;
+  margin-bottom: 5px;
+
+  
+}
+
+
+
+/* For mobile devices and above */
+@media (max-width: 768px) {
+  .product-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* For small mobile devices */
+@media (max-width: 480px) {
+  .product-container {
+    grid-template-columns: 1fr;
+  }
+
+ 
+}
+
+
+
+
+/* single product page */
+
+.single-product-container{
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin: auto;
+  height: 400px;
+  width: 50%;
+  
+  border-radius: 10px;
+  margin-top: 20px;
+}
+
+.single-product-container .image{
+  height:200px ;
+  margin: 30px;
+
+}
+
+.single-product-container img{
+  margin: auto;
+  height: 190px;
+  width: 60%;
+
+}
+
+.single-product-container .desc{
+  margin-top: 30px;
+  
+
+}
+
+.single-product-container h1{
+  text-align: center;
+  font-weight: bolder;
+}
+
+.single-product-container p{
+  text-align: center;
+  
+}
+
+.single-product-container .button{
+  height:80px ;
+  display: flex;
+
+}
+
+.single-product-container .button button{
+  margin: auto;
+  padding: 10px;
+  cursor: pointer;
+  background-color: #666;
+  color: black;
+ 
+
+}
+
+
+
+/* Cart page */
+
+.cart-container {
+  max-width: 1200px;
+  margin: auto;
+  padding: 20px;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.cart-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 20px;
+}
+
+.cart-table th, .cart-table td {
+  padding: 15px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+}
+
+.cart-table th {
+  background-color: #f1f1f1;
+}
+
+.cart-item-image {
+  width: 50px;
+  height: auto;
+}
+
+.quantity-input {
+  width: 60px;
+  padding: 5px;
+}
+
+.remove-button {
+  background-color: #ff4d4d;
+  color: white;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+.remove-button:hover {
+  background-color: #ff3333;
+}
+
+.total {
+  text-align: right;
+  font-size: 1.5em;
+  font-weight: bold;
+  margin-top: 20px;
+}
+
+
+
+/* login and register page */
+/* Centering the form on the page */
+.login-container,
+.register-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh; /* Full height of the viewport */
+  background-color: #f5f5f5; /* Light grey background */
+  padding: 20px;
+}
+
+/* Styling the form elements */
+.login-container form,
+.register-container form {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  max-width: 400px; /* Maximum width of the form */
+  background: white; /* White background for the form */
+  padding: 30px;
+  border-radius: 8px; /* Rounded corners */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Light shadow for depth */
+}
+
+/* Styling the input fields */
+.login-container input,
+.register-container input {
+  margin-bottom: 15px; /* Space between inputs */
+  padding: 10px; /* Space inside the inputs */
+  border: 1px solid #ddd; /* Light border */
+  border-radius: 4px; /* Rounded corners for inputs */
+  font-size: 16px; /* Font size */
+}
+
+/* Focus effect for inputs */
+.login-container input:focus,
+.register-container input:focus {
+  outline: none;
+  border-color: #6c63ff; /* Primary color on focus */
+  box-shadow: 0 0 5px rgba(108, 99, 255, 0.5); /* Light shadow on focus */
+}
+
+/* Styling the buttons */
+.login-container button,
+.register-container button {
+  padding: 10px;
+  border: none;
+  border-radius: 4px;
+  background-color: #6c63ff; /* Primary button color */
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s; /* Smooth color transition */
+}
+
+/* Hover effect for buttons */
+.login-container button:hover,
+.register-container button:hover {
+  background-color: #514fb3; /* Slightly darker shade on hover */
+}
+
+/* Link styling */
+.login-container h4 span,
+.register-container h4 span {
+  color: #6c63ff; /* Link color */
+  cursor: pointer;
+  transition: color 0.3s; /* Smooth color transition */
+}
+
+/* Hover effect for links */
+.login-container h4 span:hover,
+.register-container h4 span:hover {
+  color: #514fb3; /* Slightly darker shade on hover */
+}
+
+/* Extra styles for form headings */
+.login-container h4,
+.register-container h4 {
+  margin-top: 20px; /* Space above the heading */
+  text-align: center; /* Centered text */
+}
+
+/* Logout button specific styling */
+button[type='button'] {
+  margin-top: 10px; /* Space above the button */
+  background-color: #ff4d4d; /* Red for logout button */
+}
+
+button[type='button']:hover {
+  background-color: #cc0000; /* Darker red on hover */
+}
+
+
+/* search components */
+
+.product-grid {
+  padding: 20px;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 20px;
+}
+
+.product-item {
+  border: 1px solid #ddd;
+  padding: 10px;
+  text-align: center;
+}
+
+.product-item img {
+  width: 100%;
+  max-width: 200px;
+  height: auto;
+  margin-bottom: 10px;
+}
+
+.product-item h2 {
+  font-size: 1.2rem;
+  margin-bottom: 5px;
+}
+
+.product-item p {
+  font-size: 1rem;
+  color: #666;
+}
+
+
+
+
+

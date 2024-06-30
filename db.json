@@ -1,0 +1,338 @@
+{
+  "Slider1": [
+    {
+      "id": "1",
+      "image": "./src/assets/images/imageSlider1.avif"
+    },
+    {
+      "id": "2",
+      "image": "./src/assets/images/imageSlider2.avif"
+    },
+    {
+      "id": "3",
+      "image": "./src/assets/images/imageSlider3.avif"
+    }
+  ],
+  "Topbrands": [
+    {
+      "title": "Skinceuticals",
+      "image_path": "./src/assets/images/Skinceuticals.avif",
+      "id": "93cf"
+    },
+    {
+      "title": "Eltamid",
+      "image_path": "./src/assets/images/Eltamd.avif",
+      "id": "f348"
+    },
+    {
+      "title": "Skinmedica",
+      "image_path": "./src/assets/images/skinmedica.avif",
+      "id": "497b"
+    },
+    {
+      "title": "Sunday Riley",
+      "image_path": "./src/assets/images/sundayriley.avif",
+      "id": "48f0"
+    },
+    {
+      "title": "Is Clinical",
+      "image_path": "./src/assets/images/isClinical.avif",
+      "id": "f8f1"
+    },
+    {
+      "title": "Neocutis",
+      "image_path": "./src/assets/images/Neocutis.avif",
+      "id": "836a"
+    }
+  ],
+  "Trending": [
+    {
+      "title": "SUNSCREEN",
+      "image_path": "./src/assets/images/sunscreen.avif",
+      "id": "7fd5"
+    },
+    {
+      "title": "SUMMER SKIN CARE",
+      "image_path": "./src/assets/images/summerskincare.avif",
+      "id": "a81c"
+    },
+    {
+      "title": "SUMMER MAKE UP",
+      "image_path": "./src/assets/images/summermakeup.avif",
+      "id": "8e62"
+    },
+    {
+      "title": "SUMMER HAIR CARE",
+      "image_path": "./src/assets/images/summerhaircare.avif",
+      "id": "2be4"
+    },
+    {
+      "title": "POST SUN CARE",
+      "image_path": "./src/assets/images/postsuncare.avif",
+      "id": "bdca"
+    },
+    {
+      "title": "SPF 30+",
+      "image_path": "./src/assets/images/spf30+.avif",
+      "id": "1c5c"
+    }
+  ],
+  "Offers15": [
+    {
+      "image_path": "./src/assets/images/ordinary.avif",
+      "title": "The Ordinary 100% Organic Virgin Sea-Buckthorn Fruit Oil",
+      "price": "$6.70",
+      "id": "fb4c",
+      "Qty": 1
+    },
+    {
+      "image_path": "./src/assets/images/ordinary2.avif",
+      "title": "The Ordinary EUK 134 Serum 0.1% 30ml",
+      "price": "$11.50",
+      "id": "6087",
+      "Qty": 1
+    },
+    {
+      "image_path": "./src/assets/images/ordinary3.avif",
+      "title": "The Ordinary 100% Cold Pressed Virgin Marula Oil 30ml",
+      "price": "$11.40",
+      "id": "3a8e",
+      "Qty": 1
+    },
+    {
+      "image_path": "./src/assets/images/ordinary4.avif",
+      "title": "The Ordinary Lactic Acid 5% + HA 2% Superficial Peeling Formulation 30ml",
+      "price": "$8.10",
+      "id": "e354",
+      "Qty": 1
+    },
+    {
+      "image_path": "./src/assets/images/ordinary5.avif",
+      "title": "The Ordinary 100% L-Ascorbic Acid Powder 20g",
+      "price": "$6.60",
+      "id": "acbf",
+      "Qty": 1
+    },
+    {
+      "image_path": "./src/assets/images/ordinary6.avif",
+      "title": "The Ordinary Ethylated Ascorbic Acid 15% Solution",
+      "price": "$20.00",
+      "id": "ac8d",
+      "Qty": 1
+    },
+    {
+      "image_path": "./src/assets/images/ordinary7.avif",
+      "title": "The Ordinary Ascorbyl Tetraisopalmitate Solution 20% in Vitamin F 30ml",
+      "price": "$20.50",
+      "id": "5d0b",
+      "Qty": 1
+    }
+  ],
+  "Offers50": [
+    {
+      "image_path": "./src/assets/images/Product1.avif",
+      "title": "Illamasqua 3-in-1 Face Palette",
+      "price": "$16.80",
+      "id": "82f4",
+      "Qty": 1
+    },
+    {
+      "image_path": "./src/assets/images/Product2.avif",
+      "title": "ESPA Balancing Hydrator 70ml",
+      "price": "$35.50",
+      "id": "7282",
+      "Qty": 1
+    },
+    {
+      "image_path": "./src/assets/images/Product3.avif",
+      "title": "Glytone Age-Defying Routine (Worth $186.00)",
+      "price": "$120.00",
+      "id": "8e11",
+      "Qty": 1
+    },
+    {
+      "image_path": "./src/assets/images/Product4.avif",
+      "title": "Illamasqua Gleam Highlighter",
+      "price": "$11.80",
+      "id": "6d1f",
+      "Qty": 1
+    },
+    {
+      "image_path": "./src/assets/images/Product5.avif",
+      "title": "StriVectin Acne Clearing Treatment Lotion 50ml",
+      "price": "$34.30",
+      "id": "12b2",
+      "Qty": 1
+    },
+    {
+      "image_path": "./src/assets/images/Product6.avif",
+      "title": "RéVive Moisturizing Renewal Serum",
+      "price": "$164.50",
+      "id": "34a9",
+      "Qty": 1
+    },
+    {
+      "image_path": "./src/assets/images/Product7.avif",
+      "title": "Embryolisse Firming-Lifting Cream 50ml",
+      "price": "$36.00",
+      "id": "bd63",
+      "Qty": 1
+    }
+  ],
+  "BestSeller": [
+    {
+      "image_path": "./src/assets/images/Bestseller1.avif",
+      "title": "Elemis Pro-Collagen Cleansing Balm 100g",
+      "price": "$69.80",
+      "id": "3f7c",
+      "Qty": 1
+    },
+    {
+      "image_path": "./src/assets/images/Bestseller2.avif",
+      "title": "Sunday Riley Good Genes All-In-One Lactic Acid Treatment 1oz",
+      "price": "$85.00",
+      "id": "f031",
+      "Qty": 1
+    },
+    {
+      "image_path": "./src/assets/images/Bestseller3.avif",
+      "title": "Obagi Medical Professional-C Serum 20% Strength",
+      "price": "$142.00",
+      "id": "0767",
+      "Qty": 1
+    },
+    {
+      "image_path": "./src/assets/images/Bestseller4.avif",
+      "title": "BIOEFFECT EGF Eye Serum 6ml",
+      "price": "$95.00",
+      "id": "c1d6",
+      "Qty": 1
+    }
+  ],
+  "ProductPage": [
+    {
+      "image_path": "./src/assets/images/Product1.avif",
+      "title": "Illamasqua 3-in-1 Face Palette",
+      "price": "$16.80",
+      "id": "5f5b"
+    },
+    {
+      "image_path": "./src/assets/images/Product2.avif",
+      "title": "ESPA Balancing Hydrator 70ml",
+      "price": "$35.50",
+      "id": "590a"
+    },
+    {
+      "image_path": "./src/assets/images/Product3.avif",
+      "title": "Glytone Age-Defying Routine (Worth $186.00)",
+      "price": "$120.00",
+      "id": "eb04"
+    },
+    {
+      "image_path": "./src/assets/images/Product4.avif",
+      "title": "Illamasqua Gleam Highlighter",
+      "price": "$11.80",
+      "id": "e48a"
+    },
+    {
+      "image_path": "./src/assets/images/Product5.avif",
+      "title": "StriVectin Acne Clearing Treatment Lotion 50ml",
+      "price": "$34.30",
+      "id": "fa83"
+    },
+    {
+      "image_path": "./src/assets/images/Product6.avif",
+      "title": "RéVive Moisturizing Renewal Serum",
+      "price": "$164.50",
+      "id": "c9ed"
+    },
+    {
+      "image_path": "./src/assets/images/Product7.avif",
+      "title": "Embryolisse Firming-Lifting Cream 50ml",
+      "price": "$36.00",
+      "id": "5983"
+    },
+    {
+      "image_path": "./src/assets/images/Bestseller1.avif",
+      "title": "Elemis Pro-Collagen Cleansing Balm 100g",
+      "price": "$69.80",
+      "id": "5cd0"
+    },
+    {
+      "image_path": "./src/assets/images/Bestseller2.avif",
+      "title": "Sunday Riley Good Genes All-In-One Lactic Acid Treatment 1oz",
+      "price": "$85.00",
+      "id": "2127"
+    },
+    {
+      "image_path": "./src/assets/images/Bestseller3.avif",
+      "title": "Obagi Medical Professional-C Serum 20% Strength",
+      "price": "$142.00",
+      "id": "c60f"
+    },
+    {
+      "image_path": "./src/assets/images/Bestseller4.avif",
+      "title": "BIOEFFECT EGF Eye Serum 6ml",
+      "price": "$95.00",
+      "id": "cd2b"
+    },
+    {
+      "image_path": "./src/assets/images/ordinary.avif",
+      "title": "The Ordinary 100% Organic Virgin Sea-Buckthorn Fruit Oil",
+      "price": "$6.70",
+      "id": "b83d"
+    },
+    {
+      "image_path": "./src/assets/images/ordinary2.avif",
+      "title": "The Ordinary EUK 134 Serum 0.1% 30ml",
+      "price": "$11.50",
+      "id": "2653"
+    },
+    {
+      "image_path": "./src/assets/images/ordinary3.avif",
+      "title": "The Ordinary 100% Cold Pressed Virgin Marula Oil 30ml",
+      "price": "$11.40",
+      "id": "97f2"
+    },
+    {
+      "image_path": "./src/assets/images/ordinary4.avif",
+      "title": "The Ordinary Lactic Acid 5% + HA 2% Superficial Peeling Formulation 30ml",
+      "price": "$8.10",
+      "id": "feb0"
+    },
+    {
+      "image_path": "./src/assets/images/ordinary5.avif",
+      "title": "The Ordinary 100% L-Ascorbic Acid Powder 20g",
+      "price": "$6.60",
+      "id": "3730"
+    },
+    {
+      "image_path": "./src/assets/images/ordinary6.avif",
+      "title": "The Ordinary Ethylated Ascorbic Acid 15% Solution",
+      "price": "$20.00",
+      "id": "bfc1"
+    },
+    {
+      "image_path": "./src/assets/images/ordinary7.avif",
+      "title": "The Ordinary Ascorbyl Tetraisopalmitate Solution 20% in Vitamin F 30ml",
+      "price": "$20.50",
+      "id": "b5b7"
+    }
+  ],
+  "Cart": [
+    {
+      "id": "fa83",
+      "image_path": "./src/assets/images/Product5.avif",
+      "title": "StriVectin Acne Clearing Treatment Lotion 50ml",
+      "price": "$34.30",
+      "Qty": 1
+    },
+    {
+      "id": "97f2",
+      "image_path": "./src/assets/images/ordinary3.avif",
+      "title": "The Ordinary 100% Cold Pressed Virgin Marula Oil 30ml",
+      "price": "$11.40",
+      "Qty": 1
+    }
+  ]
+}
