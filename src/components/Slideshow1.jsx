@@ -3,7 +3,7 @@ import { BsArrowLeftCircleFill, BsArrowRightCircleFill } from "react-icons/bs";
 import "../App.css";
 
 const Slideshow1 = () => {
-  let url = "http://localhost:8080/Slider1";
+  let url = "https://skinstore-backend.onrender.com/Slider1";
 
   const [images, setImages] = useState([]);
   const [currentSlide, setCurrentSlide] = useState(0);
@@ -45,8 +45,6 @@ const Slideshow1 = () => {
   const handleNext = () => {
     setCurrentSlide(currentSlide === images.length - 1 ? 0 : currentSlide + 1);
   };
-
- 
 
   return (
     <div className="container">

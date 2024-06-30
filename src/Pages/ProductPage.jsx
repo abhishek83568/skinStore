@@ -1,54 +1,57 @@
-import React, { useEffect } from 'react';
-import { useDispatch, useSelector } from 'react-redux';
-import { fetchData } from '../redux/action';
-import Footer from '../components/Footer';
-import { useNavigate } from 'react-router-dom';
-import data from "../../db.json"
-console.log(data)
+import React, { useEffect } from "react";
+import { useDispatch, useSelector } from "react-redux";
+import { fetchData } from "../redux/action";
+import Footer from "../components/Footer";
+import { useNavigate } from "react-router-dom";
+
+
 const ProductPage = () => {
-  const productData = useSelector((state) => state.product); 
+  const productData = useSelector((state) => state.product);
   const dispatch = useDispatch();
   const navigate = useNavigate();
-  
+
   useEffect(() => {
     dispatch(fetchData());
   }, [dispatch]);
 
   const addToCart = async (product) => {
     try {
-      
-      const cartResponse = await fetch('http://localhost:8080/Cart');
+      const cartResponse = await fetch(
+        "https://skinstore-backend.onrender.com/Cart"
+      );
       const cartData = await cartResponse.json();
 
-   
       const existingProduct = cartData.find((item) => item.id === product.id);
 
       if (existingProduct) {
-        
-        const updatedProduct = { ...existingProduct, Qty: existingProduct.Qty + 1 };
-        await fetch(`http://localhost:8080/Cart/${existingProduct.id}`, {
-          method: 'PUT',
-          headers: {
-            'Content-Type': 'application/json',
-          },
-          body: JSON.stringify(updatedProduct),
-        });
+        const updatedProduct = {
+          ...existingProduct,
+          Qty: existingProduct.Qty + 1,
+        };
+        await fetch(
+          `https://skinstore-backend.onrender.com/Cart/${existingProduct.id}`,
+          {
+            method: "PUT",
+            headers: {
+              "Content-Type": "application/json",
+            },
+            body: JSON.stringify(updatedProduct),
+          }
+        );
       } else {
-       
         const newProduct = { ...product, Qty: 1 };
-        await fetch('http://localhost:8080/Cart', {
-          method: 'POST',
+        await fetch("https://skinstore-backend.onrender.com/Cart", {
+          method: "POST",
           headers: {
-            'Content-Type': 'application/json',
+            "Content-Type": "application/json",
           },
           body: JSON.stringify(newProduct),
         });
       }
 
       navigate("/cart");
-
     } catch (error) {
-      console.error('Error adding to cart:', error);
+      console.error("Error adding to cart:", error);
     }
   };
 
@@ -62,10 +65,10 @@ const ProductPage = () => {
 
   return (
     <>
-      <div className='product-container'>
+      <div className="product-container">
         {productData.data.length > 0 ? (
           productData.data.map((product) => (
-            <div key={product.id} className='single-product'>
+            <div key={product.id} className="single-product">
               <div style={{ height: "300px", width: "100%" }}>
                 <img src={product.image_path} alt={product.title} />
               </div>
@@ -74,8 +77,18 @@ const ProductPage = () => {
                 <p>Price: {product.price}</p>
               </div>
               <div style={{ display: "flex" }}>
-                <button className='viewProductButton' onClick={() => navigate(`/product/${product.id}`)}>View Product</button>
-                <button className='cartButton' onClick={() => addToCart(product)}>Add To Cart</button>
+                <button
+                  className="viewProductButton"
+                  onClick={() => navigate(`/product/${product.id}`)}
+                >
+                  View Product
+                </button>
+                <button
+                  className="cartButton"
+                  onClick={() => addToCart(product)}
+                >
+                  Add To Cart
+                </button>
               </div>
             </div>
           ))

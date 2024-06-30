@@ -5,7 +5,7 @@ import "slick-carousel/slick/slick-theme.css";
 import "../App.css"; // Ensure this path is correct
 
 const TopBrands = () => {
-  const url = "http://localhost:8080/Topbrands";
+  const url = "https://skinstore-backend.onrender.com/Topbrands";
 
   const [images, setImages] = useState([]);
   const [errorMsg, setErrorMsg] = useState(null);
@@ -86,7 +86,6 @@ const TopBrands = () => {
                     alt={imageItem.title}
                     className="circular-image"
                   />
-                 
                 </div>
               </div>
             ))

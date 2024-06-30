@@ -1,5 +1,9 @@
 // actions.js
-import { FETCHDATAERROR, FETCHDATAREQUEST, FETCHDATASUCCESS } from './actionTypes';
+import {
+  FETCHDATAERROR,
+  FETCHDATAREQUEST,
+  FETCHDATASUCCESS,
+} from "./actionTypes";
 
 export const loadingAction = () => ({ type: FETCHDATAREQUEST });
 
@@ -10,7 +14,7 @@ export const successAction = (data) => ({
   payload: data,
 });
 
-const url = 'http://localhost:8080/ProductPage';
+const url = "https://skinstore-backend.onrender.com/ProductPage";
 
 export const fetchData = () => async (dispatch) => {
   dispatch(loadingAction());
@@ -18,10 +22,9 @@ export const fetchData = () => async (dispatch) => {
   try {
     const response = await fetch(url);
     const result = await response.json();
-   
-    if(result){
 
-        dispatch(successAction(result))
+    if (result) {
+      dispatch(successAction(result));
     }
   } catch (error) {
     dispatch(errorAction());

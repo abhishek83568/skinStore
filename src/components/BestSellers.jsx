@@ -2,16 +2,13 @@ import React, { useEffect, useState } from "react";
 import "../App.css";
 import { useNavigate } from "react-router-dom";
 
-
 const BestSellers = () => {
-  const url = "http://localhost:8080/BestSeller";
+  const url = "https://skinstore-backend.onrender.com/BestSeller";
   const [images, setImages] = useState([]);
   const [errorMsg, setErrorMsg] = useState(null);
   const [loading, setLoading] = useState(false);
 
-  const navigate=useNavigate()
-
-  
+  const navigate = useNavigate();
 
   const fetchImages = async (url) => {
     try {
@@ -33,15 +30,6 @@ const BestSellers = () => {
     fetchImages(url);
   }, [url]);
 
-
-
-  
-    
-
-
-
-  
-
   if (loading) {
     return <div>Loading ...</div>;
   }
@@ -49,8 +37,6 @@ const BestSellers = () => {
   if (errorMsg) {
     return <div>Error occurred! {errorMsg}</div>;
   }
-
-
 
   return (
     <div className="bestSeller-container">
@@ -62,7 +48,9 @@ const BestSellers = () => {
           <button>Quick Buy</button>
         </div>
       ))}
-      <button className="viewallProducts"  onClick={()=>navigate('/product')}>VIEW ALL</button>
+      <button className="viewallProducts" onClick={() => navigate("/product")}>
+        VIEW ALL
+      </button>
     </div>
   );
 };

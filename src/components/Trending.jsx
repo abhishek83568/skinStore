@@ -4,7 +4,7 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 
 export const Trending = () => {
-  const url = "http://localhost:8080/Trending";
+  const url = "https://skinstore-backend.onrender.com/Trending";
 
   const [trending, setTrending] = useState([]);
   const [loading, isLoading] = useState(false);
@@ -29,8 +29,6 @@ export const Trending = () => {
   useEffect(() => {
     fetchImages(url);
   }, [url]);
-
-  
 
   var settings = {
     dots: true,
@@ -78,7 +76,13 @@ export const Trending = () => {
   return (
     <div
       className="slider-container"
-      style={{ width: "90%", margin: "auto", cursor: "pointer", marginBottom:"100px" , marginTop:"50px" }}
+      style={{
+        width: "90%",
+        margin: "auto",
+        cursor: "pointer",
+        marginBottom: "100px",
+        marginTop: "50px",
+      }}
     >
       <Slider {...settings}>
         {trending.map((item, index) => {
@@ -95,7 +99,7 @@ export const Trending = () => {
                     position: "absolute",
                     top: "80%",
                     left: "35%",
-                   
+
                     transform: "translate(-50%, -50%)",
                     padding: "5px",
                     cursor: "pointer",
